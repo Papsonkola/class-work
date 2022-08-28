@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h2> HTML Form Validation</h2>
+    <form action="" method="POST">
+        <p>
+            Username<input type="text" name="uname" placeholder="Enter Username" required>
+        </p>
+        <p>
+            password<input type="password" name="pword" placeholder="Enter Password" required>
+        </p>
+        <input type="submit" value="Send">
+    </form>
+    <h2> JAVASCRIPT Form Validation</h2>
+    <form action="project1.html" method="POST" name="form1" onsubmit="return validate()">
+        <p>
+            Username: <input type="text" name="uname" placeholder="Enter Username" >
+        </p>
+        <p>
+            password: <input type="password" name="pword" placeholder="Enter Password" id="show">
+        </p>
+        <p>Show password: <input type="checkbox" onclick="showhide()"> </p>
+        <input type="submit" value="Send">
+    </form>
+    <script>
+        function validate() {
+            var v = document.forms['form1']['uname'].value.trim();
+            if (v == ''){
+                alert("username must be filled");
+                return false;
+            }
+            var p = document.forms['form1']['pword'].value.trim();
+            if (p == ''){
+                alert("Password must be filled");
+                return false;
+            }
+        }
+
+        //function to show or hide password
+        function showhide(){
+            var s = document.getElementById('show')
+            if(s.type == 'password'){
+                 s.type = 'text'
+            }
+        }
+        //function to remove space
+        function removeSpace(){
+
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body bgcolor="cyan">
+    <center><font color="#3cf000"><h1>NIGERIA DEFENCE ACADEMY</h1></font>
+    <p><h3>Fill the form below to register for our next academic session.</h3></p></center>
+    <form action="#" method="post">
+        <!-- <label> FIrst name:</label>
+        <input type="text">
+        <br><br>
+        <label>Last name:</label>
+        <input type="text>" -->
+        <p><strong>First name:</strong>
+        <input type="text" placeholder="Enter your first name" name="fname" required></p>
+        <p><strong>Last name:</strong>
+        <input type="text" placeholder="Enter your last name" name="lname" required></p>
+        <p><strong>Password:</strong>
+        <input type="password" placeholder="Enter your password" name="passw" required>
+        </p>
+        <p><strong>E-mail:</strong>
+            <input type="email" placeholder="Enter your email" name="email" required> 
+        </p>
+        <p><strong>Date of Birth:</strong>
+            <input type="date" name="D.O.B" max="2004-12-31" min="1960-01-01">
+        </p>
+        
+
+        <p><strong>Select your gender:</strong> <br>
+            <input type="radio" name="gender" value="Male">
+            <label for="option 1">Male</label><br>
+            <input type="radio" name="gender" value="Female">
+            <label for="option 2">Female</label><br>
+            <input type="radio" name="gender" value="others">
+            <label for="option 3">Others</label><br>        
+        </p>
+        <fieldset>
+            <legend><strong>Bio Data</strong></legend>
+            <P><strong>Gender:</strong> 
+            <input type="radio" name="Gender" value="Male" id="option 1"> Male
+            <input type="radio" name="Gender" value="Female" id="option 2"> Female
+            <input type="radio" name="Gender" value="Others" id="option 3"> Others
+            </P>
+            <P><strong>Educational Qualification:</strong>
+            <input type="checkbox" name="qualification" value="First school leaving certificate"> First school leaving certificate
+            <input type="checkbox" name="qualification" value="SSCE"> SSCE
+            <input type="checkbox" name="qualification" value="NCE"> NCE
+            <input type="checkbox" name="qualification" value="OND"> OND
+            <input type="checkbox" name="qualification" value="HND"> HND
+            <input type="checkbox" name="qualification" value="Bsc."> Bsc.
+            <input type="checkbox" name="qualification" value="Msc."> Msc.
+            <input type="checkbox" name="qualification" value="PhD"> PhD
+            <input type="checkbox" name="qualification" value="Others"> Others       
+            </P>
+            <p><strong>Country:</strong>
+                <select name="option" id="option">
+                    <option value="o1">Algeria</option>
+                    <option value="o2">Benin</option>
+                    <option value="o3">Cameroon</option>
+                    <option value="o4">Cote d'ivoire</option>
+                    <option value="o5">Egypt</option>
+                    <option value="o6">Ghana</option>
+                    <option value="o7">Liberia</option>
+                    <option value="o8">Mali</option>
+                    <option value="o9">Niger</option>
+                    <option value="o10">Nigeria</option>
+                    <option value="o11"> Senegal</option>
+                    <option value="o12"> South Africa</option>
+                </select>
+            </p>
+
+            <P><strong>Upload your passport</strong> <input type="file" value="Choose a file"> 
+            </P>
+            <p><strong>State of origin:</strong> 
+                <input type="text">
+            </p>
+
+            <p><strong>Comment:</strong>
+                <textarea name="comment" rows="15" cols="30" placeholder="Your comment"></textarea>
+            </p>
+            <input type="color" name="favColor" value="#ff0000"><br><br>
+            <input type="submit" value="send">
+
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

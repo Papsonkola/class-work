@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .digitalClock{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div class="digitalClock">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <sup id="format"></sup>
+    </div>
+    <script>
+        function clock(){
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            var ft = document.getElementById('format')
+
+            document.getElementById('hours').innerHTML = h;
+            document.getElementById('minutes').innerHTML = m;
+            document.getElementById('seconds').innerHTML = s;
+            
+            if(h>=12){
+                ft.innerHTML='pm'
+            }
+            else{
+                ft.innerHTML='am'
+            }
+            
+            if(h>11){
+            h = h - '11'
+            }
+        }
+        setInterval(clock)
+    
+    </script>
+</body>
+</html>

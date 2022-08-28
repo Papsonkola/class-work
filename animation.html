@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            background-color: #00f;
+            /* Standard syntax */
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 1s;
+            /* For safari browser */
+            -webkit-transition-property:width;
+            -webkit-transition-duration: 2s;
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-delay: 1s;
+            /* shorthand syntax */
+            transition: width 1s ease-out 1s;
+        }
+        #d1:hover{
+            width: 300px;
+        }
+        #d2{
+            width: 100px;
+            height: 100px;
+            margin: 30px 0;
+            background-color: #f00;
+            transition: 2s;
+        }
+        #d2:hover{
+            /* transform:rotate(360deg) */
+            /* transform:translateY(-150%) */
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+
+        }
+        #d3{
+            width: 100px;
+            height: 100px;
+            background-color: #0f0;
+            position: relative;
+            /* standard syntax */
+            animation-name: sample;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* For safari browser */
+            -webkit-animation-name: sample;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-timing-function: ease-in;
+            -webkit-animation-delay: 1s;
+            -webkit-animation-iteration-count: infinite;
+            /* shorthand for animation */
+            animation: sample 2s ease-in infinite alternate;
+        }
+        
+        @keyframes sample{
+            /* from{
+                background-color: #f00;
+            } 
+            to{
+                background-color: #0f0;
+                margin-left: 100px;
+            } */
+            /* method 2 */
+            /* 0%{
+                background-color: #f00;
+            }
+            50%{
+                background-color: #0f0;
+                margin-left: 100px;
+            }
+            100%{
+                background-color: #00f;
+                margin-left: 200px;
+            } */
+            /* method 3 */
+            0%{
+                background-color: #0f0;
+                left: 0;
+                top:0;
+            }
+            25%{
+                left: 200px;
+                top: 0;
+            }
+            50%{
+                left: 200px;
+                top:200px;
+            }
+            75%{
+                left: 0;
+                top: 200px;
+            } 
+            100%{
+                left:0;
+                top: 0;
+            } 
+        }
+        /* more examples */
+        .text{
+            color: darkblue;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 6%;
+        }
+        .item{
+            height: 80px;
+            overflow: hidden;
+
+        }
+        .item-wrapper{
+            height: 100%;
+            animation: motion 10s ease-in-out infinite /*alternate*/ ;
+        }
+        .i-item{
+            height: 80px;
+            font-size: 60px;
+            font-weight: bold;
+            color: blue;
+        }
+        @keyframes motion {
+           25%{
+            transform: translateY(-80px);
+           } 
+           50%{
+            transform: translateY(-160px);
+           }
+           75%{
+            transform: translateY(-240px);
+           }
+           100%{
+            transform: translateY(-360px);
+           }
+        }
+    </style>
+</head>
+<body>
+   <!--CSS transition and Animations in simple terms, are motion effect on elements
+How to use css transitions
+To create a transition effect, you must specify two things:
+
+- the css property you want to add and effect to and
+- the duration of th3e effect.
+Note, the transition will have no effect, if the duration part is not specified.
+How to use css animations
+- specify the animation using:
+@keyframes nameOf animation{
+    cssProperty:value;
+}-->
+<h2>Hover over the box below to see the transition effect:</h2>
+<div id="d1"></div>
+
+<div id="d2"></div>
+
+<!-- <div id="d3"></div> -->
+<p class="text">We offer the following:</p>
+<div class="item">
+    <div class="item-wrapper">
+        <div class="i-item">Catering Services</div>
+        <div class="i-item">Event Planning</div>
+        <div class="i-item">Training</div>
+        <div class="i-item">Outdoor Service</div>
+
+    </div>
+</div>
+</body>
+</html>

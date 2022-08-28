@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Animals</p>
+    <ul>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li class="wild">Lion</li>
+        <li>Rabbit</li>
+        <li class="wild">Hyena</li>
+        <li class="wild">Leopard</li>
+    </ul>
+    <button onclick="changestyle()">Click Me</button>
+    <button ondblclick="changeClassStyle()"> Click Me</button>
+    <script>
+        function changestyle(){
+            var list = document.getElementsByTagName("li");
+            var s;
+            for (s=0; s<list.length;s++){
+                list[s].style.color='red'
+            }
+        }
+        function changeClassStyle(){
+            var list = document.getElementsByClassName("wild");
+            var t;
+            for (t=0; t<list.length;t++){
+                list[t].style.color= 'green'
+            }
+        }
+    </script>
+</body>
+</html>

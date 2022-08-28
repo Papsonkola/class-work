@@ -1,0 +1,59 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+}
+.dark-theme{
+    --white-color:#000;
+    --black-color:#fff;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color:var(--white-color);
+    color:var(--black-color);
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.class{
+    flex: 50%;
+}
+ul{
+    display: flex;
+    flex: 50%;
+}
+li{
+    list-style: none;
+
+
+}
+a{
+    padding: 0 15px;
+}
+.mright{
+    float: right;
+    margin-left:67% ;
+}
+img{
+    float: right;
+    width: 20px;
+    
+}
+.cont{
+    display: flex;
+}
+.image{
+    /* flex: 50%; */
+    background-color: red;
+    height: 500px;
+    border-radius: 50%;
+    width: 500px;
+    margin-left: 50px;
+}
+.hi{
+    flex: 50%;
+}

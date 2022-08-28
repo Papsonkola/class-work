@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Javascript is client sided scripting language
+    It is used to program web pages
+Javascript is usually embedded in html pages
+Javascript is case sensitive
+It was invented by brendahg Eich
+
+    Javascrip can display data in majorly 4 different ways
+1. inside an html element using .innerhtml
+2. inside an html page using document .write()
+3. inside a pop-up window such as alert(); or prompt();
+4. inside the browser's console using console.log();
+
+note, javascript can also be written in a seperate file and linked to an html page as a form of external javacript.
+
+Also, to add or embedded js program into a webpage, place it inside a script tag- <script></script>
+The script tag can be placed either in the head section or body section or body section of your html page.
+-->
+<!-- inline js -->
+<!-- <h2>    javacript can change HTML element</h2>
+<p id="change">THIS TEXT IS GONNA CHANGE SOON</p>
+<button type="button" onclick="document.getElementById('change').innerHTML = 'OMG! Javacript change this text'">Click me</button>
+
+<h2>Javacriptcan change change html attribute</h2>
+<img src="images/logo.png" alt="" id="image" onclick="document.getElementById('image').src='images/logo2.png'">3
+
+<h2>Javacriptcan change change html attribute</h2>
+<img src="images/logo.png" alt="" id="images" onmouseover="document.getElementById('images').src='images/logo2.png'" onmouseout="document.getElementById('images').src='images/logo.png'">3
+
+<p id="kola">THIS TEXT IS GONNA CHANGE SOON</p>
+<button type="button" ondblclick="document.getElementById('kola').style.color='red'">Click me</button>
+
+<button type="button" ondblclick="document.getElementById('kola').style.fontSize='30px'">Click me</button>
+
+<h2>Javacript can hide or show element</h2>
+<p id="david">Javacript can hide or show this text</p>
+<button type="button" onclick="document.getElementById('david').style.display='none'">Click to hide</button>
+<button type="button" onclick="document.getElementById('david').style.display='block'">Click to show</button> -->
+<!-- Embedded Javascript -->
+<script>
+    document.write("<b>hello world</b>")      //string
+    document.write("<br>")
+    document.write(78, "<br>")         //integer
+    document.write(78.6)                //float
+    document.write("<br>")
+    //Boolean data type (true or false)
+    document.write(10>6, "<br>")
+
+    alert("my first javascript");
+    prompt("hello, what's your name?");
+
+    var name = "Emmanuel"
+    var age = 45
+
+    //concatenation means joining data together
+    document.write(name + " is",   age + "yrs old <br>")
+    document.write(name + " is 45 yrs old <br>")
+    document.write(name + " is 45 yrs old <br>")
+    
+    var age = prompt("How old are you?")
+    var newAge = parseInt(age) + 10 
+    alert ("You will be " + newAge + " old in 10 years.")
+
+
+</script>
+</body>
+</html>

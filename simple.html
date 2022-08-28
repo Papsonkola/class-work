@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+    <input type="text" id="first">
+    <input type="text" id="second">
+    <input type="text" id="answer">
+    <div>
+        <button onclick="addition()" type="button">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="multiply()">*</button>
+        <button onclick="divide()">/</button>
+    </div>
+    <script>
+        function addition(){
+            let up = document.getElementById('first').value;
+            let down = document.getElementById('second').value;
+            let up1 = parseInt(up);
+            let down1 = parseInt(down);
+            
+            
+            let last = up1 + down1;
+            // if(up=='' || down==''){
+            //     last== NaN
+            // }
+            document.getElementById('answer').value=last;
+        }
+        function sub(){
+            let up = document.getElementById('first').value
+            let down = document.getElementById('second').value
+            let up1 = parseFloat(up)
+            let down1 = parseFloat(down)
+            let last = up1 - down1
+            document.getElementById('answer').value = last;
+            // if(up=='' || down==''){
+            //     last== NaN
+            // }
+        }
+        function multiply(){
+            let up = document.getElementById('first').value
+            let down = document.getElementById('second').value
+            let up1 = parseFloat(up)
+            let down1 = parseFloat(down)
+            let last = up1 * down1
+            document.getElementById('answer').value = last;
+        }
+        function divide(){
+            let up = document.getElementById('first').value
+            let down = document.getElementById('second').value
+            let up1 = parseFloat(up)
+            let down1 = parseFloat(down)
+            let last = up1 / down1
+            document.getElementById('answer').value = last;
+        }
+
+    </script>
+</body>
+</html>

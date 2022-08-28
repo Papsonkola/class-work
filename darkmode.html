@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="darkmode.css"></link>
+    <title>Document</title>
+</head>
+<body>
+        <nav>
+            <div class="home">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Skills</a></li>
+                    <li><a>Hire Me</a></li>
+                </ul>
+            </div>    
+            <div class="mright">
+            <img src="images/moon.png" id="icon" onclick="changeTheme()">   
+            </div>
+        </nav>
+    <container class="cont">
+        <div class="image">
+            <img src="">
+        </div>
+        <div class="hi">
+            <h3>Hi There, I'm</h3>
+            <h1>Efe
+                Bankole
+            </h1>
+            <p>A Web developer</p>
+        </div>
+    </container>
+    <script>
+        function changeTheme(){
+            var icon = document.getElementById('icon');
+            document.body.classList.toggle('dark-theme');
+            if(document.body.classList.contains('dark-theme')){
+                icon.src='images/sun.png'
+            }
+            else{
+                icon.src='images/moon.png'
+            }
+        }
+
+    </script>
+</body>
+</html>

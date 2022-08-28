@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table style</title>
+    <style>
+        /* Navigation bar selection */
+        ul{
+            list-style-type:none;
+            background-color:green ;
+            display:flex;
+            margin-bottom: -2px;
+            justify-content:flex-end
+        }
+        li{
+            margin: 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        ul li a:hover{
+            text-decoration: underline;
+            color: black;
+            /* font-size: larger; */
+            padding: 5px;
+
+        }
+        /* Table section */
+        table{
+            width: 100%;
+            
+        }
+        th, td{
+            padding:10px;
+            /* border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: green; */
+            border-bottom: 1px solid green;
+        }
+        tr:nth-child(even){
+            background-color: lavender;
+        }
+        th{
+            background-color: green;
+            color: white;
+        }
+        tr:hover{
+            background-color: navy;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!--navigation bar-->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Poster image -->
+    <img src="images/22C920E4-F24F-4D19-B6AB-90E74C599EAFL0001.jpg" width="100%" he>
+   <table>
+    <table>
+        <tr id="heading">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>State of Origin</th>
+            <th>L.G. Area</th>
+            <th>Nationality</th>
+            <th>Email Address</th>
+            <th colspan="2">Phone Number</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Matthew</td>
+            <td>Male</td>
+            <td>40</td>
+            <td>Lagos</td>
+            <td>Ikeja</td>
+            <td>Nigerian</td>
+            <td>johnmatthew@gmail.com</td>
+            <td>+234 8087543211</td>
+            <td>+234 8087543211</td>
+        </tr>
+        <tr>
+           <td>Kate</td>
+           <td>Ham</td>
+           <td>Female</td>
+           <td>30</td>
+           <td>Benue</td>
+           <td>Makurdi</td>
+           <td>Nigerian</td>
+           <td>kateham@gmail.com</td>
+           <td>+234 8017543211</td>
+           <td>+234 8087543211</td>
+       </tr>
+       <tr>
+           <td>Mbambo</td>
+           <td>Khaya</td>
+           <td>Male</td>
+           <td>34</td>
+           <td>Johannesburg</td>
+           <td>Burgmeat</td>
+           <td>South African</td>
+           <td>mbambokhaya@gmail.com</td>
+           <td>+27 8087543211</td>
+           <td>+234 8087543211</td>
+       </tr>
+       <tr>
+           <td>James</td>
+           <td>Abiola</td>
+           <td>Male</td>
+           <td>55</td>
+           <td>Ogun</td>
+           <td>Abeokuta North</td>
+           <td>Nigerian</td>
+           <td>jamesab@gmail.com</td>
+           <td>+234 70875437771</td>
+           <td>+234 8087543211</td>
+       </tr>
+       <tr>
+           <td>Mary</td>
+           <td>Nhaya</td>
+           <td>Female</td>
+           <td>27</td>
+           <td>Cape Town</td>
+           <td>mandeyy</td>
+           <td>South African</td>
+           <td>marynhaya@gmail.com</td>
+           <td>+27 8017666211</td>
+           <td>+234 8087543211</td>
+       </tr>
+       
+   </table> 
+    
+</body>
+</html>
